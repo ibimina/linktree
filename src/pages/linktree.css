@@ -5,7 +5,7 @@
 }
 
 #profile_img {
-  background-image: url("./assets/default-img.png");
+  background-image: url("/assets/default-img.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 88px;
@@ -17,7 +17,7 @@
 }
 #profile_img:hover,
 #profile_img:active {
-  background-image: url("./assets/img-tap.png");
+  background-image: url("/assets/img-tap.png");
 }
 .share-wrap {
   display: flex;
@@ -31,25 +31,25 @@
   height: 40px;
   border: 1px dashed #d0d5dd;
   border-radius: 50%;
-  background-image: url("./assets/default-dot.svg");
+  background-image: url("/assets/default-dot.svg");
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
 }
 .share:focus {
   box-shadow: 0px 0px 0px 4px #f2f4f7;
-  background-image: url("./assets/focus-dot.svg");
+  background-image: url("/assets/focus-dot.svg");
 }
 .share:active {
   box-shadow: none;
-  background-image: url("./assets/active-dot.svg");
+  background-image: url("/assets/active-dot.svg");
   background-color: #f9fafb;
 }
 
 .share:disabled {
   background-color: #f9fafb;
   border: 1px dashed #eaecf0;
-  background-image: url("./assets/disabled-dot.svg");
+  background-image: url("/assets/disabled-dot.svg");
 }
 .tool-tip {
   display: none;
@@ -138,11 +138,11 @@ footer p {
     gap: 1em;
   }
   .share {
-    background-image: url("./assets/share-default.svg");
+    background-image: url("/assets/share-default.svg");
     background-color: #ffffff;
   }
   .share:hover {
-    background-image: url("./assets/share-hover.svg");
+    background-image: url("/assets/share-hover.svg");
     cursor: pointer;
     transition: 200ms ease-out;
     background-color: #f9fafb;
@@ -154,7 +154,7 @@ footer p {
   .share:disabled {
     background-color: #f9fafb;
     border: 1px dashed #eaecf0;
-    background-image: url("./assets/share-disabled.svg");
+    background-image: url("/assets/share-disabled.svg");
   }
   .share-wrap:hover .tool-tip {
     display: block;
