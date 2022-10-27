@@ -3,16 +3,21 @@ import React from "react";
 export default function Profile() {
   return (
     <section className="profile_section">
-      <img
-        src="/assets/device=Mobile, state=Default.png"
-        alt="Annette Black"
-        id="profile_img"
-      />
-      <button className="share"></button>
-      <p id="twitter">IbiminaaH</p>
-      <p id="ibimina" hidden>
-        ibimina
-      </p>
+      <div>
+        <div id="profile_img"></div>
+        <p id="twitter">IbiminaaH</p>
+        <p id="ibimina" hidden>
+          ibimina
+        </p>
+      </div>
+      <div className="share-wrap">
+        <div className="tool-tip">
+          <span>Share link</span>
+          <img src="./assets/bottom-center.svg" alt="" className="arrow" />
+        </div>
+
+        <button className="share"></button>
+      </div>
     </section>
   );
 }
