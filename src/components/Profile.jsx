@@ -8,7 +8,7 @@ export default function Profile() {
            <img src="./assets/cam.svg" alt="" className="cam" />
         </div>
         <p id="twitter">IbiminaaH</p>
-        <p id="ibimina" hidden>
+        <p id="slack" hidden>
           ibimina
         </p>
       </div>
