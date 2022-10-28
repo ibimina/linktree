@@ -9,7 +9,7 @@ export default function Profile() {
         </div>
         <p id="twitter">IbiminaaH</p>
         <p id="slack" hidden>
-          ibimina
+          Ibimina
         </p>
       </div>
       <div className="share-wrap">
