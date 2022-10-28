@@ -36,7 +36,6 @@ export default function LinksBtn() {
               rel="noreferrer"
               id={link.id}
               className="btn"
-              aria-disabled
             >
               {link.text}
             </a>
