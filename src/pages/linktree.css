@@ -4,7 +4,7 @@
   margin-bottom: 2em;
 }
 
-#profile_img {
+#profile__img {
   background-image: url("/assets/default-img.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -20,12 +20,12 @@
     position: absolute;
     bottom: .5em;
 }
-#profile_img:hover,
+#profile__img:hover,
 #profile_img:active {
     filter: brightness(60%);
 }
- #profile_img:hover .cam,
-#profile_img:active .cam{
+ #profile__img:hover .cam,
+#profile__img:active .cam{
 display: block;
 left: 2em;
 filter: brightness(100%);
@@ -133,7 +133,7 @@ footer p {
   color: #667085;
 }
 @media (min-width: 60rem) {
-  #profile_img:focus {
+  #profile__img:focus {
     border: 5.5px solid #ebe9fe;
   }
   .share-wrap {
