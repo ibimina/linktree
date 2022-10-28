@@ -39,11 +39,6 @@ export default function LinksBtn() {
               aria-disabled
             >
               {link.text}
-              {/* <img
-                src="./assets/share-default.svg"
-                alt=""
-                className="link-share"
-              /> */}
             </a>
           </li>
         ))}
