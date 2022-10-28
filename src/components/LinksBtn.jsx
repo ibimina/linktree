@@ -6,7 +6,6 @@ export default function LinksBtn() {
       text: "Twitter Link",
       id: "twitter",
       href: "https://twitter.com/ibiminaaH",
-      title: "twitter link",
     },
     {
       text: "Zuri Team",
@@ -53,7 +52,7 @@ export default function LinksBtn() {
           key={link.id}
         >
           {link.text}
-          <span>{link.title}</span>
+          {link.title && <span>{link.title}</span>}
         </a>
       ))}
       <div className="social_icon">
