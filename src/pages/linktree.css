@@ -10,14 +10,24 @@
   background-position: center;
   width: 88px;
   height: 88px;
-  border: 0;
   margin: 0 auto 1em;
   background-color: transparent;
   border-radius: 50%;
 }
+.cam{
+    display: none;
+    position: absolute;
+    bottom: .5em;
+}
 #profile_img:hover,
 #profile_img:active {
-  background-image: url("/assets/img-tap.png");
+    filter: brightness(60%);
+}
+ #profile_img:hover .cam,
+#profile_img:active .cam{
+display: block;
+left: 2em;
+filter: brightness(100%);
 }
 .share-wrap {
   display: flex;
@@ -31,25 +41,27 @@
   height: 40px;
   border: 1px dashed #d0d5dd;
   border-radius: 50%;
-  background-image: url("/assets/default-dot.svg");
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .share:focus {
   box-shadow: 0px 0px 0px 4px #f2f4f7;
-  background-image: url("/assets/focus-dot.svg");
 }
 .share:active {
   box-shadow: none;
-  background-image: url("/assets/active-dot.svg");
   background-color: #f9fafb;
 }
-
+.share:active img {
+  filter: brightness(0%);
+}
 .share:disabled {
   background-color: #f9fafb;
   border: 1px dashed #eaecf0;
-  background-image: url("/assets/disabled-dot.svg");
+}
+.share:disabled img {
+  filter: brightness(150%);
 }
 .tool-tip {
   display: none;
@@ -76,24 +88,15 @@
   background: #d0d5dd;
   border: 1px solid #d0d5dd;
 }
-/* link disabled state to be complete */
 .btn:disabled {
   background: #fcfcfd;
   border: 1px solid #f2f4f7;
-
 }
-#twitter{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 28px;
+#twitter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
 }
-/* .link-share {
-  width: 40px;
-  height: 40px;
-  display: none;
-} */
 .container {
   padding: 3em 1em;
 }
@@ -109,22 +112,20 @@ footer {
 }
 .footer_content {
   padding-top: 1em;
-border-top: 1px solid #EAECF0;
+  border-top: 1px solid #eaecf0;
 }
 .mar_bottom {
   margin-bottom: 1em;
 }
-.logo{
-    width: 140.69px;
-height: 24px;
+.logo {
+  width: 140.69px;
+  height: 24px;
 }
-.ig{
-    width: 99.1px;
-height: 24px;
+.ig {
+  width: 99.1px;
+  height: 24px;
 }
 footer p {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -137,24 +138,10 @@ footer p {
   .share-wrap {
     gap: 1em;
   }
-  .share {
-    background-image: url("/assets/share-default.svg");
-    background-color: #ffffff;
-  }
   .share:hover {
-    background-image: url("/assets/share-hover.svg");
     cursor: pointer;
     transition: 200ms ease-out;
     background-color: #f9fafb;
-  }
-  .share:focus {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 0px 4px #f2f4f7;
-  }
-  .share:disabled {
-    background-color: #f9fafb;
-    border: 1px dashed #eaecf0;
-    background-image: url("/assets/share-disabled.svg");
   }
   .share-wrap:hover .tool-tip {
     display: block;
@@ -170,8 +157,6 @@ footer p {
     border-radius: 8px;
     color: #ffffff;
     text-transform: capitalize;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -180,12 +165,12 @@ footer p {
     position: relative;
     right: 0.1em;
   }
-  .footer_content{
+  .footer_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .container {
-  padding:3em 7em;
-}
+    padding: 3em 7em;
+  }
 }
