@@ -4,13 +4,15 @@ export default function LinksBtn() {
   const links = [
     {
       text: "Twitter Link",
-      id: "btn__twitter",
+      id: "twitter",
       href: "https://twitter.com/ibiminaaH",
+      title: "twitter link",
     },
     {
       text: "Zuri Team",
       id: "btn__zuri",
       href: "https://training.zuri.team/",
+      title: "Register for Zuri Trainings",
     },
     {
       text: "Zuri Books",
@@ -22,16 +24,21 @@ export default function LinksBtn() {
       text: "Python Books",
       id: "book__python",
       href: "https://books.zuri.team/python-for-beginners?ref_id=ibimina",
+
+      title:
+        "Setup your game as a python programmer with the following materials",
     },
     {
       text: "Background Check for Coders",
       id: "pitch",
       href: "https://background.zuri.team",
+      title: "A service for background checks on Codes",
     },
     {
       text: "Design Books",
       id: "book__design",
       href: "https://books.zuri.team/design-rules",
+      title: "Get the free design book offered by Zuri",
     },
   ];
   return (
@@ -44,9 +51,9 @@ export default function LinksBtn() {
           id={link.id}
           className="btn"
           key={link.id}
-          title={link.title}
         >
           {link.text}
+          <span>{link.title}</span>
         </a>
       ))}
       <div className="social_icon">

@@ -5,31 +5,19 @@
 }
 
 #profile__img {
-  background-image: url("/assets/default-img.png");
-  background-repeat: no-repeat;
-  background-position: center;
   width: 88px;
   height: 88px;
   margin: 0 auto 1em;
   background-color: transparent;
   border-radius: 50%;
-   position: relative;
+  position: relative;
 }
-.cam{
-    display: none;
-    position: absolute;
-    bottom: .5em;
-}
+
 #profile__img:hover,
 #profile_img:active {
-    filter: brightness(60%);
+  content: url("/assets/hv.png");
 }
- #profile__img:hover .cam,
-#profile__img:active .cam{
-display: block;
-left: 2em;
-filter: brightness(100%);
-}
+
 .share-wrap {
   display: flex;
   position: absolute;
@@ -173,5 +161,26 @@ footer p {
   }
   .container {
     padding: 3em 7em;
+  }
+  .btn span {
+    display: none;
+  }
+  .btn:hover {
+    position: relative;
+    /* cursor: help; */
+  }
+  .btn:hover span {
+    position: absolute;
+    bottom: -2em;
+    padding: 0.5em 1em;
+    background: #101828;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    z-index: 10000;
+    display: block;
   }
 }
