@@ -31,22 +31,18 @@ export default function LinksBtn() {
    ];
   return (
     <div className="link_div">
-      <ul>
         {links.map((link) => (
-          <li key={link.id}>
             <a
               href={link.href}
               target="_blank"
               rel="noreferrer"
               id={link.id}
               className="btn"
+              key={link.id}
             >
               {link.text}
-            </a>
-          </li>
+            </a>         
         ))}
-      </ul>
-
       <div className="social_icon">
         <img src="/assets/slack.svg" alt="slack icon" />
         <img src="/assets/github.svg" alt="github icon" />
