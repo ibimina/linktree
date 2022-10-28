@@ -4,7 +4,7 @@ export default function Profile() {
   return (
     <section className="profile_section">
       <div>
-        <div id="profile_img">
+        <div id="profile__img">
            <img src="./assets/cam.svg" alt="" className="cam" />
         </div>
         <p id="twitter">IbiminaaH</p>

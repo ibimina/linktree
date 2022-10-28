@@ -4,14 +4,14 @@ export default function LinksBtn() {
    const links = [
      {
        text: "Twitter Link",
-       id: "btn_twitter",
+       id: "btn__twitter",
        href: "https://twitter.com/ibiminaaH",
      },
      { text: "Zuri Team", id: "btn_zuri", href: "https://training.zuri.team/" },
      { text: "Zuri Books", id: "books", href: "https://books.zuri.team" },
      {
        text: "Python Books",
-       id: "book_python",
+       id: "book__python",
        href: "https://books.zuri.team/python-for-beginners?ref_id=ibimina",
      },
      {
@@ -21,7 +21,7 @@ export default function LinksBtn() {
      },
      {
        text: "Design Books",
-       id: "book_design",
+       id: "book__design",
        href: "https://books.zuri.team/design-rules",
      },
    ];
