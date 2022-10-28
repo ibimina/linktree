@@ -5,7 +5,7 @@ export default function Profile() {
     <section className="profile_section">
       <div>
         <div id="profile__img">
-          <img src="./assets/cam.svg" alt="" className="cam" />
+          <img src="./assets/cam.svg" alt="ibimina avatar" className="cam" />
         </div>
         <p id="twitter">IbiminaaH</p>
         <p id="slack" hidden>
@@ -15,14 +15,14 @@ export default function Profile() {
       <div className="share-wrap">
         <div className="tool-tip">
           <span>Share link</span>
-          <img src="./assets/bottom-center.svg" alt="" className="arrow" />
+          <img src="./assets/bottom-center.svg" alt="arrow icon" className="arrow" />
         </div>
         <picture className="share">
           <source
             srcset="./assets/share-default.svg"
             media="(min-width:40rem)"
           />
-          <img src="./assets/default-dot.svg" alt="" />
+          <img src="./assets/default-dot.svg" alt="more icon" />
         </picture>
       </div>
     </section>
