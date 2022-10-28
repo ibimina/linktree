@@ -6,13 +6,11 @@ export default function LinksBtn() {
       text: "Twitter Link",
       id: "btn__twitter",
       href: "https://twitter.com/ibiminaaH",
-      title: "my twitter account",
     },
     {
       text: "Zuri Team",
       id: "btn__zuri",
       href: "https://training.zuri.team/",
-      title: "Register for Zuri Trainings",
     },
     {
       text: "Zuri Books",
@@ -24,20 +22,16 @@ export default function LinksBtn() {
       text: "Python Books",
       id: "book__python",
       href: "https://books.zuri.team/python-for-beginners?ref_id=ibimina",
-      title:
-        "Setup your game as a python programmer with the following materials",
     },
     {
       text: "Background Check for Coders",
       id: "pitch",
       href: "https://background.zuri.team",
-      title: "A  background checks on Coders",
     },
     {
       text: "Design Books",
       id: "book__design",
       href: "https://books.zuri.team/design-rules",
-      title: "Get the free design book offered by Zuri",
     },
   ];
   return (
