@@ -7,7 +7,7 @@ export default function LinksBtn() {
        id: "btn__twitter",
        href: "https://twitter.com/ibiminaaH",
      },
-     { text: "Zuri Team", id: "btn_zuri", href: "https://training.zuri.team/" },
+     { text: "Zuri Team", id: "btn__zuri", href: "https://training.zuri.team/" },
      { text: "Zuri Books", id: "books", href: "https://books.zuri.team" },
      {
        text: "Python Books",
